@@ -7,7 +7,7 @@ industry partner: codemanufaktur GmbH).
 
 The trained models run on an Android phone mounted on a small robot ("Robbie"). The phone detects a
 door, estimates depth with MiDaS, and steers the robot via Bluetooth.
-App code: [`robbie-door-navigation-android`](../robbie-door-navigation-android).
+App code: [`robbie-door-navigation-android`](https://github.com/ChristianMartin868/robbie-door-navigation-android).
 
 ## What is in here
 
