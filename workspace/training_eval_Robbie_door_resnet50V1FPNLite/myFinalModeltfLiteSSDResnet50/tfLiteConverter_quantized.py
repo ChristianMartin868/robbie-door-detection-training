@@ -10,16 +10,27 @@ dataset_dir = "C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robb
 IMAGE_SIZE = 640
 
 
-def representative_dataset():
-  dataset_list = tf.data.Dataset.list_files(dataset_dir + "/*.jpg")
-  for i in range(200):
-    image = next(iter(dataset_list))
-    image = tf.io.read_file(image)
-    image = tf.io.decode_png(image, channels=3)
+def representative_dataset(num_samples=200, seed=42):
+  """Calibration data for full-integer quantization.
+
+  Fixes compared to the thesis version (tag thesis-2021):
+  * Input range: the detector is fed inputs normalised to [-1, 1]
+    (mean = std = 127.5, see addMetadataTotfLiteModel*.py). The old code
+    calibrated with [0, 1]. Because inference_input_type is uint8, the
+    input quantisation parameters are derived from this calibration data,
+    so the int8 model effectively mapped raw pixels to [0, 1] instead of
+    [-1, 1] - a train/inference preprocessing mismatch.
+    Verify: compare float32 vs int8 detections on the same test images.
+  * Sampling: `next(iter(dataset_list))` created a new shuffled iterator
+    on every loop pass, i.e. 200 random draws *with* replacement. Now the
+    file list is shuffled once (seeded) and each image is used at most once.
+  """
+  files = tf.data.Dataset.list_files(dataset_dir + "/*.jpg", shuffle=True, seed=seed)
+  for path in files.take(num_samples):
+    image = tf.io.decode_image(tf.io.read_file(path), channels=3, expand_animations=False)
     image = tf.image.resize(image, [IMAGE_SIZE, IMAGE_SIZE])
-    image = tf.cast(image / 255., tf.float32)
-    image = tf.expand_dims(image, 0)
-    yield [image]
+    image = (tf.cast(image, tf.float32) - 127.5) / 127.5
+    yield [tf.expand_dims(image, 0)]
 
 #ZU Testzwecken
 """
