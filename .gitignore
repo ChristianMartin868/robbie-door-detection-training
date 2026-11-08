@@ -1,0 +1,8 @@
+# data and large artefacts are not versioned
+**/images/
+**/pre-trained-models/
+**/checkpoint*
+*.record
+*.tflite
+**/saved_model/
+__pycache__/
