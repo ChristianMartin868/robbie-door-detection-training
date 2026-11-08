@@ -1,0 +1,29 @@
+python generate_tfrecord.py -x C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door/images/train -l C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door/annotations/label_map.pbtxt -o C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door/annotations/train.record
+python generate_tfrecord.py -x C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door/images/test -l C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door/annotations/label_map.pbtxt -o C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door/annotations/test.record
+
+
+
+
+
+python generate_tfrecord.py -x C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2/images/train -l C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2/annotations/label_map.pbtxt -o C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2/annotations/train.record
+python generate_tfrecord.py -x C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2/images/test -l C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2/annotations/label_map.pbtxt -o C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2/annotations/test.record
+
+
+
+
+python generate_tfrecord.py -x C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/images/train -l C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/annotations/label_map.pbtxt -o C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/annotations/train.record
+python generate_tfrecord.py -x C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/images/test -l C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/annotations/label_map.pbtxt -o C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/annotations/test.record
+python generate_tfrecord.py -x C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/images/val -l C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/annotations/label_map.pbtxt -o C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/annotations/val.record
+
+
+
+
+
+python generate_tfrecord.py -x C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_resnet50V1FPNLite/images/train -l C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_resnet50V1FPNLite/annotations/label_map.pbtxt -o C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_resnet50V1FPNLite/annotations/train.record
+python generate_tfrecord.py -x C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_resnet50V1FPNLite/images/test -l C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_resnet50V1FPNLite/annotations/label_map.pbtxt -o C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_resnet50V1FPNLite/annotations/test.record
+
+
+
+
+python generate_tfrecord.py -x C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenet640V2FPNLite/images/train -l C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenet640V2FPNLite/annotations/label_map.pbtxt -o C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenet640V2FPNLite/annotations/train.record
+python generate_tfrecord.py -x C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenet640V2FPNLite/images/test -l C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenet640V2FPNLite/annotations/label_map.pbtxt -o C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenet640V2FPNLite/annotations/test.record

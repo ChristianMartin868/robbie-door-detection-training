@@ -1,0 +1,29 @@
+python partition_dataset.py -x -i C:/repos/TensorFlow2_last/workspace/training_BKH_Pen/images/images_BKH -r 0.1
+
+python partition_dataset.py -x -i C:/repos/TensorFlow2_last/workspace/training_BKH_Pen/images/images_Pen -r 0.1
+
+
+python partition_dataset.py -x -i C:/repos/Tensorflow2_ObjectDetection/workspace/imagesForTraining_Testing/Pictures_Honor9Lite/Camera -r 0.1
+
+
+python partition_dataset.py -x -i C:/repos/Tensorflow2_ObjectDetection/workspace/imagesForTraining_Testing/imagesDoor -r 0.1
+
+
+python partition_dataset.py -x -i C:/repos/Tensorflow2_ObjectDetection/workspace/imagesForTraining_Testing/cabinetry -r 0.1
+
+
+python partition_dataset.py -x -i C:/repos/Tensorflow2_ObjectDetection/workspace/imagesForTraining_Testing/imagesPictureFrame -r 0.1
+
+
+python partition_dataset.py -x -i C:/repos/Tensorflow2_ObjectDetection/workspace/imagesForTraining_Testing/imagesSpind -r 0.1
+
+
+
+python partition_dataset.py -x -i C:/repos/Tensorflow2_ObjectDetection/workspace/imagesForTraining_Testing/imagesWindow -r 0.1
+
+
+
+
+
+
+

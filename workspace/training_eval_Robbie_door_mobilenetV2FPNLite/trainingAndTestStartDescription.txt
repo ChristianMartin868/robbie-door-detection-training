@@ -1,0 +1,14 @@
+//start training
+python model_main_tf2.py --model_dir=models/my_ssd_mobilenet_v2_fpnlite --pipeline_config_path=models/my_ssd_mobilenet_v2_fpnlite/pipeline.config
+
+//start test
+python model_main_tf2.py --model_dir=models/my_ssd_mobilenet_v2_fpnlite --pipeline_config_path=models/my_ssd_mobilenet_v2_fpnlite/pipeline.config --checkpoint_dir=models/my_ssd_mobilenet_v2_fpnlite
+
+
+//start tensorboard
+tensorboard --logdir=models/my_ssd_mobilenet_v2_fpnlite
+
+//Info zu Tensorboard: For Ubuntu users, 
+go to: /home/$USERNAME/.local/lib/python3.8/site-packages/ or whatever path is displayed in the error. 
+There you will see 2 folders with names something like this tensorboard and tensorboad-2.5.0.dist-info. 
+Remove the second one.

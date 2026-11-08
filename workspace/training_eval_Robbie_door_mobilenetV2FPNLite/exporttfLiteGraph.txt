@@ -1,0 +1,5 @@
+
+python ./export_tflite_graph_tf2.py \
+    --pipeline_config_path C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/exported-models/my_model/pipeline.config \
+    --trained_checkpoint_dir C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/exported-models/my_model/checkpoint \
+    --output_directory C:/repos/Tensorflow2_ObjectDetection/workspace/training_eval_Robbie_door_mobilenetV2FPNLite/myFinalModeltfLiteSSDMobilenetFPN320
